@@ -4,3 +4,4 @@ It is a Regional Quotes app developed for android devices using kotlin language.
 # Previews
 ![](screenshot/ss1.jpg)
 ![](screenshot/ss2.jpg)
+![](screenshot/ss3.jpg)
