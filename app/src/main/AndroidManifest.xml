@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.techboyy.marathi_quotes">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_square"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PageDetail" />
+        <activity android:name=".msg_activity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4551223888875542~1190717308" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen_Splash"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MotivationActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".FrndshipActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".GanpatiActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".TilakActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".RakshabandhanActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".SavarkarActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".LifeActivity" android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

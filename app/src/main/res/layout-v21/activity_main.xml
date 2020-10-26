@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/custom_toolbar"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/toolbar_logo"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@mipmap/logo_round"
+                android:contentDescription="logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/toolbar_title"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="80dp"
+                android:text="Marathi Quotes"
+                android:textColor="#ffffff"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/Share_Btn"
+                android:background="@drawable/ic_share_white"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#FA5B16"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/msg_btn"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_msg"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:listitem="@layout/example_item" />
+
+</RelativeLayout>

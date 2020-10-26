@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/toolbar_logo"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@mipmap/logo_round"
+                android:contentDescription="logo" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="80dp"
+                android:text="Marathi Quotes"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/banner_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#81A4D1"
+        app:cardCornerRadius="50dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="17dp"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/bigquote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Money will give you people you want, but hustle will give you the people you deserve"
+                android:textAlignment="center"
+                android:textColor="#FFFDFD"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/big_id_sign"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bigquote"
+                android:layout_marginTop="2dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_insta_round" />
+
+            <Button
+                android:id="@+id/big_id"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bigquote"
+                android:layout_toEndOf="@id/big_id_sign"
+                android:padding="2dp"
+                android:text="motivateoneself"
+                android:textColor="#D10E50"
+                android:textSize="27sp"
+                android:textStyle="italic" />
+
+
+            <Button
+                android:id="@+id/Share_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/big_id"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_user2"
+                android:text="Share"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

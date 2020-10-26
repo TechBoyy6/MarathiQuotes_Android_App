@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="35dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#81A4D1"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="17dp"
+        android:padding="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="68dp"
+            android:id="@+id/profile_card"
+            android:layout_height="65dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="35dp">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="User Image"
+            android:src="@drawable/ic_person_black_24dp"
+            android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/quote_txt"
+            android:layout_width="301dp"
+            android:layout_height="54dp"
+            android:layout_toEndOf="@+id/profile_card"
+            android:layout_toRightOf="@+id/profile_card"
+            android:text="Money will give you people you want, but hustle will give you the people you deserve"
+            android:textColor="#FFFDFD"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quoted_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quote_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/profile_card"
+            android:layout_toRightOf="@+id/profile_card"
+            android:fontFamily="@font/changa_one_italic"
+            android:text="\@motivateoneself"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Marathi Quotes</string>
+    <string name="msg">Send your quotes along with your Instagram username to us and increase your page traffic.</string>
+    <string name="link">Direct Message me on my Instagram Account.Click 👇 </string>
+    <string name="admob_appId">cca-app-pub-4551223888875542~1190717308</string>
+    <string name="banner_Id">ca-app-pub-4551223888875542/4938390623</string>
+    <string name="Interstitial_Id">ca-app-pub-4551223888875542/1427903919</string>
+
+</resources>
